@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1f6feb">
+  <link rel="icon" href="logo.png" type="image/png+xml">
+  <link rel="manifest" href="manifest.json">
+  <title>Trip Budget Planner - TravelNest</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/planner.css">
+</head>
+<body>
+  <header id="main-header">
+    <nav class="navbar">
+      <div class="logo">TravelNest</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explorer.html">Explore</a>
+        <a href="planner.html" class="active">Budget Planner</a>
+        <a href="generator.html">Trip Generator</a>
+        <a href="mood.html">Travel Mood</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <h1>Trip Budget Planner
+      <img src="images/emoji2.png" width="150">
+    </h1>
+    <div class="planner-container">
+      <form id="budget-form">
+        <input type="text" id="destination" placeholder="Destination (e.g. Bali)" required>
+        <input type="number" id="days" placeholder="Number of Days" min="1" required>
+        <input type="number" id="daily-budget" placeholder="Daily Budget (USD)" min="1" required>
+        <button type="submit">Calculate Trip Cost</button>
+      </form>
+
+      <div id="results">
+        <h2 id="result-title"></h2>
+        <p><strong>Total Estimated Cost:</strong> <span id="total-cost"></span></p>
+        <p><strong>Budget Level:</strong> <span id="budget-level"></span></p>
+        
+        <div class="progress-bar">
+          <div id="progress-fill" class="progress-fill"></div>
+        </div>
+        
+        <button onclick="saveTrip()">Save This Trip</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <form id="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p>&copy; 2026 TravelNest. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="javascript/common.js"></script>
+  <script src="javascript/planner.js"></script>
+</body>
+</html>

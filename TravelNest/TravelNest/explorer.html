@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1f6feb">
+  <link rel="icon" href="TN logo.png" type="image/png+xml">
+  <link rel="manifest" href="manifest.json">
+  <title>Explore Destinations - TravelNest</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/explorer.css">
+</head>
+<body>
+  <header id="main-header">
+    <nav class="navbar">
+      <div class="logo">TravelNest</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="explorer.html" class="active">Explore</a>
+        <a href="planner.html">Budget Planner</a>
+        <a href="generator.html">Trip Generator</a>
+        <a href="mood.html">Travel Mood</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <h1>Destination Explorer</h1>
+    <input type="text" id="search-input" placeholder="Search destinations...">
+    <select id="continent-filter">
+      <option value="">All Continents</option>
+      <option value="Europe">Europe</option>
+      <option value="Asia">Asia</option>
+      <option value="Africa">Africa</option>
+      <option value="Americas">Americas</option>
+      <option value="Oceania">Oceania</option>
+    </select>
+
+    <div id="destination-grid" class="destination-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <form id="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p>&copy; 2026 TravelNest. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="destination-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="javascript/common.js"></script>
+  <script src="javascript/explorer.js"></script>
+</body>
+</html>

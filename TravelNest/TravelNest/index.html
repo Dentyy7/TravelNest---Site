@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1f6feb">
+  <link rel="icon" href="logo.png" type="image/png+xml">
+  <link rel="manifest" href="manifest.json">
+  <title>TravelNest - Plan Your Next Adventure</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header id="main-header">
+    <nav class="navbar">
+      <div class="logo">TravelNest</div>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="explorer.html">Explore</a>
+        <a href="planner.html">Budget Planner</a>
+        <a href="generator.html">Trip Generator</a>
+        <a href="mood.html">Travel Mood</a>
+        <a href="feedback.html">Feedback</a>
+      </div>
+      <div class="hamburger">☰</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-grid">
+      <div class="hero-text">
+        <h1>Discover. Plan. Wander.</h1>
+        <p>Your all-in-one travel companion</p>
+        <div class="hero-quote">
+          <span id="hero-quote">Wander often, wonder always.</span>
+        </div>
+        <button onclick="window.location.href='explorer.html'" class="cta-btn">Start Exploring</button>
+      </div>
+      <div class="hero-image">
+        <img src="Travel Destination">
+      </div>
+    </section>
+
+    <!-- Destination of the Day -->
+    <section class="featured-destination">
+      <h2>Destination of the Day</h2>
+      <div id="daily-destination" class="author-card"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <form id="newsletter-form">
+        <input type="email" id="newsletter-email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p>&copy; 2026 TravelNest. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="javascript/common.js"></script>
+  <script src="javascript/index.js"></script>
+</body>
+</html>
